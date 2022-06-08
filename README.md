@@ -1,6 +1,6 @@
 # flask-airflow-onboarding
 
-Flask app to deploy ldap.yaml and airflow_pool.yaml changes
+Flask app to onboard new appcode + Airflow ldap and pool changes. 
 
 # Main page
 
