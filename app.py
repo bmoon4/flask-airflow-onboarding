@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 import os
+import subprocess
 
 app = Flask(__name__, template_folder="templates")
 
@@ -18,6 +19,7 @@ def form():
 @app.route('/submit',  methods=['POST'])
 def submit():
     appcode = request.form.get("appcode")
+    subprocess.Popen(['bash', 'script.sh', appcode])
     return render_template("submit.html", appcode=appcode)
 
 if __name__ == "__main__":
