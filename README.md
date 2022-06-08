@@ -11,7 +11,8 @@ Flask app to deploy ldap.yaml and airflow_pool.yaml changes
 (Backend logic is not ready yet.. WIP)
 
 ![Screenshot](images/onboard_page.png)
-
+![Screenshot](images/onboard_page(2).png)
+![Screenshot](images/submit_page.png)
 # Contact page
 ![Screenshot](images/contact_page.png)
 

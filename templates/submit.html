@@ -30,11 +30,22 @@
       </header>
 
       <main role="main" class="inner cover">
-        <h1 class="cover-heading"> Please enter your app code :)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h1>
-        <form action="/submit" method="POST">
-        <div class="form-group">
-          <input class="form-control form-control-lg" type="text" placeholder="Enter your app code (i.e. ABC0)" aria-label=".form-control-lg example" name="appcode">
-        </div>
+        <h1 class="cover-heading"> Your appcode : {{ appcode }}</h1>
+        </br>
+        </br>
+        <h3 class="cover-heading">LDAP configuration </h3>
+        </br>
+        <p> DEV/SAI : APP_MUV0_{{ appcode }}_USER &nbsp;&nbsp;&nbsp;</p>
+        <p> DEV/SAI : APP_MUV0_{{ appcode }}_VIEWER</p>
+        <p> PROD : APP_MUV0_{{ appcode }}_VIEWER&nbsp;&nbsp;&nbsp;</p>
+        </br>
+        </br>
+        <h3 class="cover-heading">Pool configuration </h3>
+        </br>
+        <p>{{ appcode }}_pool=10</p>
+        </br>
+        </br>
+        <h6 class="cover-heading"> Thank you for your onboarding:)&nbsp;&nbsp;&nbsp;&nbsp;</h6>
       </main>
 
       <footer class="mastfoot mt-auto">
