@@ -40,7 +40,7 @@ Following branches are newly created from flask app
 ![Screenshot](images/new_branch_pool(2).png)
 
 
-# Slack Nofication (Git repo <-> Slack)
+# Slack Notification (Git repo <-> Slack)
 
 App admin can subscribe git repo's changes using Slack
 
