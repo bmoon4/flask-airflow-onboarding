@@ -1,19 +1,24 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 import os
 
 app = Flask(__name__, template_folder="templates")
 
-@app.route('/', methods=['POST', 'GET'])
+@app.route('/')
 def home():
     return render_template("index.html")
 
-@app.route('/contact', methods=['GET'])
+@app.route('/contact')
 def contact():
     return render_template("contact.html")
 
-@app.route('/form', methods=['POST', 'GET'])
+@app.route('/form')
 def form():
     return render_template("form.html")
+
+@app.route('/submit',  methods=['POST'])
+def submit():
+    appcode = request.form.get("appcode")
+    return render_template("submit.html", appcode=appcode)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 3000))
