@@ -6,7 +6,7 @@ Flask app to deploy ldap.yaml and airflow_pool.yaml changes
 
 ![Screenshot](images/landing_page.png)
 
-# Summit form
+# Web form page for user input
 (WIP)
 # Contact page
 ![Screenshot](images/contact_page.png)
