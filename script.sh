@@ -31,7 +31,7 @@ echo "############################# LDAP setup ###############################"
 # git clone
 mkdir temp
 echo "git clone"
-git clone https://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@github.com/bmoon4/ldap-test.git temp
+git clone https://XXXXX@github.com/bmoon4/ldap-test.git temp
 cd temp
 
 # git checkout -b onboarding-$appcode
@@ -70,7 +70,7 @@ echo "############################# Pool setup ###############################"
 # git clone
 mkdir temp
 echo "git clone"
-git clone https://XXXXXXXXXXXXXX@github.com/bmoon4/pool-test.git temp
+git clone https://xxxxx@github.com/bmoon4/pool-test.git temp
 cd temp
 
 # git checkout -b onboarding-$appcode
