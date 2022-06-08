@@ -16,6 +16,10 @@ def contact():
 def form():
     return render_template("form.html")
 
+@app.route('/confirm')
+def confirm():
+    return render_template("confirm.html")
+
 @app.route('/submit',  methods=['POST'])
 def submit():
     appcode = request.form.get("appcode")
