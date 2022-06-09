@@ -23,8 +23,9 @@ def confirm():
 @app.route('/submit',  methods=['POST'])
 def submit():
     appcode = request.form.get("appcode")
-    subprocess.Popen(['bash', 'script.sh', appcode])
-    return render_template("submit.html", appcode=appcode)
+    email = request.form.get("email")
+    subprocess.Popen(['bash', 'script.sh', appcode, email])
+    return render_template("submit.html", appcode=appcode, email=email)
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 3000))

@@ -2,7 +2,10 @@
 
 #get appcode
 appcode=$1
+email=$2
 
+echo "your appcode: " $appcode
+echo "your email: " $email
 #set variables
 lp_prefix="APP_MUV0_"
 lp_suffix_user="_USER"
@@ -11,7 +14,7 @@ lp_user=$(echo $lp_prefix$appcode$lp_suffix_user)
 lp_viewer=$(echo $lp_prefix$appcode$lp_suffix_viewer)
 pl_suffix="_pool: 10"
 pool=$(echo $appcode$pl_suffix)
-new_branch=$(echo onboarding-$appcode)
+new_branch=$(echo onboarding-$appcode-$email)
 
 #print in console
 echo "Received appcode:" $appcode
@@ -70,7 +73,7 @@ echo "############################# Pool setup ###############################"
 # git clone
 mkdir temp
 echo "git clone"
-git clone https://xxxxx@github.com/bmoon4/pool-test.git temp
+git clone https://XXXXX@github.com/bmoon4/pool-test.git temp
 cd temp
 
 # git checkout -b onboarding-$appcode

@@ -1,6 +1,6 @@
 # flask-airflow-onboarding
 
-Flask app to onboard new appcode + Airflow ldap and pool changes. 
+Flask app to onboard new appcode + Airflow ldap and pool changes.
 
 # Main page
 
@@ -19,8 +19,8 @@ Flask app to onboard new appcode + Airflow ldap and pool changes.
 
 # How this work?
 
-1. User adds input `appcode (i.e, ABC0)` through webpage
-2. App will clone ldap repo and pool repo and create a new branch (`git checkout -b onboarding-${app_code}`)
+1. User adds input `appcode (i.e, XYZ0)` and `email(employee@company.com)`
+2. App will clone ldap repo and pool repo and create a new branch (`git checkout -b onboarding-${app_code}-${email}`)
 3. Add new config and push the new branch into remote
 4. Slack git bot will detect new branch creation and send notifications to admin
 5. Admin review the new branch/PR and merge into master
@@ -97,11 +97,11 @@ git add .
 
 git commit
 
-[onboarding-ABC0 3dbe84d] [ldap] new appcode onboarding
+[onboarding-ABC0-bkmoon0702@gmail.com 3dbe84d] [ldap] new appcode onboarding
 
  4 files changed, 4 insertions(+)
 
-Branch 'onboarding-ABC0' set up to track remote branch 'onboarding-ABC0' from 'origin'.
+Branch 'onboarding-ABC0-bkmoon0702@gmail.com' set up to track remote branch 'onboarding-ABC0-bkmoon0702@gmail.com' from 'origin'.
 
 The following changes since commit a47a68e256709e7a19053fc0ce81d391ed1800bb:
 
@@ -112,7 +112,7 @@ The following changes since commit a47a68e256709e7a19053fc0ce81d391ed1800bb:
 are available in the Git repository at:
 
 
-  https://github.com/bmoon4/ldap-test onboarding-ABC0
+  https://github.com/bmoon4/ldap-test onboarding-ABC0-bkmoon0702@gmail.com
 
 
 for you to fetch changes up to 3dbe84d759a9ae69448c1ebca20747d292fd3840:
@@ -150,11 +150,11 @@ git add .
 
 git commit
 
-[onboarding-ABC0 802d7ba] [pool] new appcode onboarding
+[onboarding-ABC0-bkmoon0702@gmail.com 802d7ba] [pool] new appcode onboarding
 
  4 files changed, 4 insertions(+)
 
-Branch 'onboarding-ABC0' set up to track remote branch 'onboarding-ABC0' from 'origin'.
+Branch 'onboarding-ABC0-bkmoon0702@gmail.com' set up to track remote branch 'onboarding-ABC0-bkmoon0702@gmail.com' from 'origin'.
 
 The following changes since commit 7c0d7036d43215322ff87e92bcca1da3377d4c64:
 
@@ -165,7 +165,7 @@ The following changes since commit 7c0d7036d43215322ff87e92bcca1da3377d4c64:
 are available in the Git repository at:
 
 
-  https://github.com/bmoon4/pool-test onboarding-ABC0
+  https://github.com/bmoon4/pool-test onboarding-ABC0-bkmoon0702@gmail.com
 
 
 for you to fetch changes up to 802d7ba38d1051cebb4fea841cd536b60d9b1e56:
@@ -201,35 +201,35 @@ Cloning into 'temp'...
 
 172.17.0.1 - - [08/Jun/2022 21:20:02] "GET /static/css/cover.css HTTP/1.1" 304 -
 
-Switched to a new branch 'onboarding-ABC0'
+Switched to a new branch 'onboarding-ABC0-bkmoon0702@gmail.com'
 
 remote:
 
-remote: Create a pull request for 'onboarding-ABC0' on GitHub by visiting:
+remote: Create a pull request for 'onboarding-ABC0-bkmoon0702@gmail.com' on GitHub by visiting:
 
-remote:      https://github.com/bmoon4/ldap-test/pull/new/onboarding-ABC0
+remote:      https://github.com/bmoon4/ldap-test/pull/new/onboarding-ABC0-bkmoon0702@gmail.com
 
 remote:
 
 To https://github.com/bmoon4/ldap-test.git
 
- * [new branch]      onboarding-ABC0 -> onboarding-ABC0
+ * [new branch]      onboarding-ABC0-bkmoon0702@gmail.com -> onboarding-ABC0-bkmoon0702@gmail.com
 
 Cloning into 'temp'...
 
-Switched to a new branch 'onboarding-ABC0'
+Switched to a new branch 'onboarding-ABC0-bkmoon0702@gmail.com'
 
 remote:
 
-remote: Create a pull request for 'onboarding-ABC0' on GitHub by visiting:
+remote: Create a pull request for 'onboarding-ABC0-bkmoon0702@gmail.com' on GitHub by visiting:
 
-remote:      https://github.com/bmoon4/pool-test/pull/new/onboarding-ABC0
+remote:      https://github.com/bmoon4/pool-test/pull/new/onboarding-ABC0-bkmoon0702@gmail.com
 
 remote:
 
 To https://github.com/bmoon4/pool-test.git
 
- * [new branch]      onboarding-ABC0 -> onboarding-ABC0
+ * [new branch]      onboarding-ABC0-bkmoon0702@gmail.com -> onboarding-ABC0-bkmoon0702@gmail.com
 
 172.17.0.1 - - [08/Jun/2022 21:20:28] "GET /confirm HTTP/1.1" 200 -
 
