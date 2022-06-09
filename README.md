@@ -19,6 +19,8 @@ Flask app to onboard new appcode + Airflow ldap and pool changes.
 
 # How this work?
 
+![Screenshot](images/workflow.png)
+
 1. User adds input `appcode (i.e, XYZ0)` and `email(employee@company.com)`
 2. App will clone ldap repo and pool repo and create a new branch (`git checkout -b onboarding-${app_code}-${email}`)
 3. Add new config and push the new branch into remote
