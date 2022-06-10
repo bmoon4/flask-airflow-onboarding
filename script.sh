@@ -7,7 +7,7 @@ email=$2
 echo "your appcode: " $appcode
 echo "your email: " $email
 #set variables
-lp_prefix="APP_MUV0_"
+lp_prefix="APP_"
 lp_suffix_user="_USER"
 lp_suffix_viewer="_VIEWER"
 lp_user=$(echo $lp_prefix$appcode$lp_suffix_user)
