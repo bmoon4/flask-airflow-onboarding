@@ -28,6 +28,7 @@ Flask app to onboard new appcode + Airflow ldap and pool changes.
 5. Admin review the new branch/PR and merge into master
 
 
+
 # New branch creation from flask app
 
 Following branches are newly created from flask app
@@ -41,6 +42,12 @@ Following branches are newly created from flask app
 ![Screenshot](images/new_branch_pool(1).png)
 ![Screenshot](images/new_branch_pool(2).png)
 
+
+
+# DB (MongoDB)
+
+![Screenshot](images/mongodb(1).png)
+![Screenshot](images/mongodb(2).png)
 
 # Slack Notification (Git repo <-> Slack)
 
